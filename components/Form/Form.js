@@ -17,7 +17,7 @@ function Form() {
             author
         };
 
-        await fetch("http://localhost:3000/api/v1/quotes/new", {
+        await fetch("https://quote-it-backend.herokuapp.com/api/v1/quotes/new", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

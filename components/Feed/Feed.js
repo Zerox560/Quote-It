@@ -8,7 +8,7 @@ function Feed() {
 
     useEffect(() => {
         async function getQuotes() {
-            const response = await fetch("http://localhost:3000/api/v1/quotes");
+            const response = await fetch("https://quote-it-backend.herokuapp.com/api/v1/quotes");
             const quotes = await response.json();
 
             setQuotes(quotes.quotes);
@@ -20,7 +20,7 @@ function Feed() {
     return (
         <FeedContainer>
             <FeedTitle>Frases Recientes</FeedTitle>
-            {quotes.map(({text, author}) => (
+            {quotes.map(({ text, author }) => (
                 <Quote text={text} author={author} />
             ))}
         </FeedContainer>
