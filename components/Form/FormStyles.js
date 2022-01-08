@@ -12,6 +12,14 @@ export const FormContainer = styled.form`
     padding: 1.5rem;
     background-color: #ffff;
     border-radius: 10px;
+
+    @media (max-width: 900px) {
+        width: 70vw;
+    }
+
+    @media (max-width: 500px) {
+        width: 95vw;
+    }
 `;
 
 export const Input = styled.input`
