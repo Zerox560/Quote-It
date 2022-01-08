@@ -1,0 +1,16 @@
+.container {
+    height: 100vh;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5rem;
+    align-items: center;
+}
+
+.newQuote__title {
+    width: 100vw;
+    text-align: center;
+    color: #000;
+    border-bottom: solid 2px #000;
+}
